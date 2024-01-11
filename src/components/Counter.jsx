@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { increment,decrement,Reset } from '../redux/counterSlice'
 
 function Counter() {
-  const [range,setRange]=useState("")
+  const [range,setRange]=useState(1)
   const dispatch=useDispatch();
   const count=useSelector(state=>state.counter.value)
   console.log("===range====",range)
